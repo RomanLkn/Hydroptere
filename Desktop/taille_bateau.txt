@@ -1,0 +1,8 @@
+Maquette existante : 
+longueur : 69cm
+largeur : -arrière : 18,5 cm
+	  -milieu : 22,5cm
+	  -enrtée moteur : 22,5cm
+hauteur : -arrière : 6,5cm
+	  -milieu : 8,5cm
+épaisseur : 0,6cm
