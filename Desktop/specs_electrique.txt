@@ -1,0 +1,9 @@
+7V : 
+moteur : 0,3-0,4A
+
+5V :
+émetteur/récepteur : 12mA
+Arduino : 0,7A
+
+(7V-12V / 1A-1,5A)
+Utiliser plus une batterie / En parler avec MASSON (adaptateurs disponibles)
