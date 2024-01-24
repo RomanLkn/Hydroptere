@@ -1,0 +1,8 @@
+	ce fichier sert à mieux comprendre le code arduino : on transfère des chiffres pour donner des instructions au bateau, chaque action des joysticks va envoyer un certain chiffre par la radio, voici les chiffres et à quelle action ils correspondent :
+
+1 : accelerer
+2 : ralentir
+3 : aller à droite
+4 : aller à gauche
+5 : monter le foil arrière
+6 : descendre le foil arrière
