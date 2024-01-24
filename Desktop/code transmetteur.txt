@@ -1,4 +1,4 @@
-	ce fichier sert à mieux comprendre le code arduino : on transfère des chiffres pour donner des instructions au bateau, chaque action des joysticks va envoyer un certain chiffre par la radio, voici les chiffres et à quelle action ils correspondent :
+ce fichier sert à mieux comprendre le code arduino : on transfère des chiffres pour donner des instructions au bateau, chaque action des joysticks va envoyer un certain chiffre par la radio, voici les chiffres et à quelle action ils correspondent :
 
 1 : accelerer
 2 : ralentir
