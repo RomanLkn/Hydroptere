@@ -12,7 +12,7 @@
  */
  #include "Servo.h"
 #include <SPI.h>
-#include "printf.h"
+#include "printf.h"*
 #include "RF24.h"
 #define pinCE 7
 #define pinCSN 8
@@ -61,6 +61,8 @@ void setup() {
   
   servo1.attach(10);
   servo2.attach(6);
+  
+  
 
   while (!Serial) {
     // some boards need to wait to ensure access to serial over USB
@@ -121,36 +123,45 @@ void loop() {
       Serial.print(pipe);  // print the pipe number
       Serial.print(F(": "));
       Serial.println(payload);  // print the payload's value
-    }
     
-    if (payload ==1) {
-      speed += 51;
-      analogWrite(ENA,speed);
+    
+    
+      if (payload ==1) {
+        //speed += 51;
+        analogWrite(ENA,255);
+        delay (100);
+      }
+
+      if (payload ==2){
+        //speed -= 51;
+        analogWrite(ENA,0);
+        delay (100);
+      }
+
+      if (payload == 3) {
+        servo1.write(90);
+        servo2.write(90);
+      } 
+      if (payload == 4) {
+        servo1.write(160);
+        servo2.write(160);
+      }
+    
+      if (payload == 5) {
+        servo1.write(90);
+        servo2.write(160);
+      }
+
+      if (payload == 6) {
+        servo2.write(90);
+        servo1.write(160);
+      }
     }
 
-    if (payload ==2){
-      speed -= 51;
-      analogWrite(ENA,speed);
-    }
+    
 
-    if (payload == 3) {
-      servo1.write(90);
-      servo2.write(90);
-    } 
-    if (payload == 4) {
-      servo1.write(160);
-      servo2.write(160);
-    }
 
-    if (payload == 5) {
-      servo1.write(90);
-      servo2.write(160);
-    }
 
-    if (payload == 6) {
-      servo2.write(90);
-      servo1.write(160);
-    }
 
     
 }
